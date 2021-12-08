@@ -5101,6 +5101,10 @@ chownr@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
 
+chromatic@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.2.0.tgz#afa30a80b3ae6c397615445be68471004403621b"
+
 chrome-trace-event@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/chrome-trace-event/-/chrome-trace-event-1.0.2.tgz#234090ee97c7d4ad1a2c4beae27505deffc608a4"
