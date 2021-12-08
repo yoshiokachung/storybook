@@ -1,0 +1,15 @@
+extend /_template/ja/_default
+append variables
+  //- 変更可能
+  - var pageTitle= "チーズ";
+  - var pageDescription= site.description;  
+  - var pageKeywords= site.keywords;
+  //- 任意
+  - var pageOgpTitle= pageTitle;
+  - var pageOgpImage= site.ogpImage;
+  - var pageOgpType= "website";
+  
+block content
+  -var thisPageDir = ''
+  +list
+  

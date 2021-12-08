@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import "base/variable/**/*.scss";
+@import "base/function/**/*.scss";
+@import "base/mixin/**/*.scss";
+@import "base/_normalize.scss";
+@import "base/_base.scss";
+
+/**
+ * .sw- (SiteWide)...サイト共通の汎用的なModule（リストやボタンなどの場所を選ばないもの）
+ * .st- (Structure)...サイト共通の構造的なModule（ヘッダーやフッター、カテゴリーごとの大枠のレイアウト、グリッドシステムやコンポーネンの余白など）
+ * .wisywig- (WISYWIG)...WISYWIG（ウィジウィグ）で入力した要素に対するスタイル
+ * .home- (HomePage)...ホームページ（サイトトップページ）
+ * .top- (TopPage)...カテゴリートップページ
+ * .sub- (SubPage)...カテゴリー下層ページ
+ * .products- (Products)...製品情報
+ * .news- (News)...ニュース
+ * .company- (Company)...会社案内・企業情報
+ * .recruit- (Recruit)...採用情報ページ
+ * .csr- (CorporateSocialResponsibility)...企業の社会的責任
+ * .faq- (FrequentlyAskedQuestions)...よくある質問
+ * .inquiry- (Inquiry)...お問い合わせ
+ * .ir- (InvestorRelations)...投資家向け情報
+ * .results- (Results)...検索結果ページ
+ * .sitemap- (Sitemap)...サイトマップページ
+ */
+@import "namespace/**/*.scss";
+
+@import "_print.scss";

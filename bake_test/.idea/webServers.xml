@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a36e3f86-227c-485b-afd1-098660218a04" name="bake_rms" url="http://ftp.rakuten.ne.jp">
+        <fileTransfer host="ftp.rakuten.ne.jp" port="16910">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="16910" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+/*
+---
+name: sw-Link
+namespace: SiteWide
+category: Link
+---
+
+テキストリンクのデフォルトスタイルです。
+
+```jade
+p
+  a.sw-Link(href="#") テキストリンクです。
+```
+*/
+.sw-Link {
+  @include sw-Link();
+}

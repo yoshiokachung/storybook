@@ -1,0 +1,118 @@
+// ==========================================================================
+// Color
+// ==========================================================================
+
+// カラーパレット
+$color-brand: #a48030 !default;
+$color-text: #000 !default;
+$color-text-important: #a94442 !default;
+$color-lead: #0a41a6 !default;
+$color-link: #2b70ba !default;
+$color-link-hover: #2b70ba !default;
+$background-color: #fff !default;
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+// `$breakpoint-up`に対応するルートフォントサイズを指定します。
+// `none`はメディアクエリなしで使用されるので指定必須です。
+$font-size: (
+  'none': 14,
+  'md': 16,
+) !default;
+
+// 注釈などに使用するフォントサイズ
+$font-size-secondary: 0.85em !default;
+
+// ベースになるline-height
+$line-height: 1.6 !default;
+
+// システムフォント
+$font-family-sans-serif: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+$font-family-serif: "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+$font-family-monospace: Consolas, Menlo, Courier, monospace !default;
+$font-family-en: "Helvetica Neue", Helvetica, sans-serif !default;
+$font-family-zh-cn: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif !default;
+$font-family-zh-tw: "Microsoft JhengHei", "微軟正黑體", 'PMingLiU' sans-serif !default;
+
+// Noto Sans
+// GoogleやMicrosoftのCDNは中国ではブロックされてしまうので、
+// フォントファイルをサーバに置いて読み込む必要があります。
+$font-family-noto-sans-ja: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+$font-family-noto-sans-en: "Noto Sans", "Helvetica Neue", Helvetica, sans-serif !default;
+$font-family-noto-sans-zh-cn: "Noto Sans SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif !default;
+$font-family-noto-sans-zh-tw: "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", "PMingLiU" sans-serif !default;
+
+
+// ==========================================================================
+// Media query
+// ==========================================================================
+
+// `sm`: iPhone6幅（ポートレート・縦）
+// `md`: iPad幅（ポートレート・縦）
+// `lg`: iPad幅（ランドスケープ・横）
+// `xl`: デスクトップ想定
+$breakpoint-up: (
+  'sm': 'print, screen and (min-width: 375px)',
+  'md': 'print, screen and (min-width: 768px)',
+  'lg': 'print, screen and (min-width: 1024px)',
+  'xl': 'print, screen and (min-width: 1440px)',
+) !default;
+
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+// コンテンツの最大幅
+$max-width: 1080px !default;
+
+// グリッドシステムのガター幅
+$grid-column-gap: 15px !default;
+$grid-row-gap: 15px !default;
+$grid-column-gap-md: 30px !default;
+$grid-row-gap-md: 30px !default;
+
+// セクションのマージン
+$margin-section2: 70px !default;
+$margin-section3: 60px !default;
+$margin-section4: 30px !default;
+$margin-section5: 30px !default;
+
+// 見出しのマージン
+$margin-heading2: 20px !default;
+$margin-heading3: 15px !default;
+$margin-heading4: 10px !default;
+$margin-heading5: 10px !default;
+
+// ブロックとテキストのマージン
+$margin-block: 15px !default;
+$margin-lead: 25px !default;
+$margin-text: 15px !default;
+$margin-small-text: 10px !default;
+
+
+// ==========================================================================
+// Animation
+// ==========================================================================
+
+$opacity: 0.7 !default;
+$transition-duration: 0.3s !default;
+$transition-timing-function: ease !default;
+
+// ==========================================================================
+// Form
+// ==========================================================================
+
+$form-border: 1px solid #767676 !default;
+$form-boder-color: #767676 !default;
+$form-border-radius: 3px !default;
+$form-transition-duration: 0.3s !default;
+$form-transition-property: border-color, box-shadow, background-color !default;
+$form-focus-border-color: #1589ee !default;
+$form-focus-box-shadow: 0 0 5px #1589ee !default;
+$form-placeholder-color: #767676 !default;
+$form-disabled-cursor: not-allowed !default;
+$form-disabled-opacity: 0.5 !default;
+$form-disabled-background-color: #ddd !default;

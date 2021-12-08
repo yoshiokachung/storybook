@@ -1,0 +1,20 @@
+<application>
+  <component name="ToolbarClicksCollector">
+    <counts>
+      <entry action="ChangesView.Refresh@ChangesViewToolbar" count="1" />
+      <entry action="CheckinProject@ChangesViewToolbar" count="2" />
+      <entry action="CompileDirty@NavBarToolbar" count="1" />
+      <entry action="Rerun@RunnerToolbar" count="22" />
+      <entry action="Stop@RunnerToolbar" count="1" />
+      <entry action="com.intellij.find.SearchTextArea$ClearAction@unknown" count="2" />
+      <entry action="com.intellij.find.editorHeaderActions.NextOccurrenceAction@EditorToolbar" count="99" />
+      <entry action="com.intellij.find.editorHeaderActions.PrevOccurrenceAction@EditorToolbar" count="54" />
+      <entry action="com.intellij.ide.browsers.actions.BaseWebBrowserAction@ContextToolbar" count="300" />
+      <entry action="com.intellij.ui.AnActionButton$AnActionButtonWrapper@ToolbarDecorator" count="3" />
+      <entry action="com.intellij.ui.CommonActionsPanel$MyActionButton@ToolbarDecorator" count="3" />
+      <entry action="com.jetbrains.plugins.webDeployment.remoteEdit.notification.RemoteEditEditorDecorator$UploadAction@unknown" count="7" />
+      <entry action="com.jetbrains.plugins.webDeployment.ui.WebServerToolWindowPanel$9@WebServerToolwindow" count="10" />
+      <entry action="com.jetbrains.plugins.webDeployment.ui.WebServerToolWindowPanel$MyCloseAction@WebServerToolwindow" count="1" />
+    </counts>
+  </component>
+</application>

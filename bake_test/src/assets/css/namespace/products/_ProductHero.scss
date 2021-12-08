@@ -1,0 +1,46 @@
+/*
+---
+name: ProductHero
+category: Structure
+tag: Image
+---
+
+productsページの商品ブロック
+
+```jade
+.st-Block
+  p.test-Box .st-Block
+.st-Block
+  p.test-Box .st-Block
+```
+
+*/
+.product-hero{
+  background-image: url("../img/namespace/products/plain_choco_main.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding-top: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  &_wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+    @include max_content();
+    &_details {
+
+    }
+    &_price {
+      display: flex;
+      flex-wrap: nowrap;
+
+    }
+  }
+  &_symbol {
+    width: 84px;
+    height: auto;
+    margin-right: $grid-column-gap;
+  }
+}

@@ -1,0 +1,15 @@
+<application>
+  <component name="MainMenuCollector">
+    <counts>
+      <entry path="File -&gt; Open Recent -&gt; Reopen Project" count="1" />
+      <entry path="File -&gt; Open..." count="13" />
+      <entry path="Tools -&gt; Deployment -&gt; Browse Remote Host" count="7" />
+      <entry path="Tools -&gt; Deployment -&gt; Configuration..." count="1" />
+      <entry path="Tools -&gt; Deployment -&gt; Options..." count="1" />
+      <entry path="VCS -&gt; Checkout from Version Control -&gt; Git" count="1" />
+      <entry path="VCS -&gt; Enable Version Control Integration..." count="1" />
+      <entry path="VCS -&gt; Local History -&gt; Show History" count="1" />
+      <entry path="Window -&gt; test_hexo" count="1" />
+    </counts>
+  </component>
+</application>

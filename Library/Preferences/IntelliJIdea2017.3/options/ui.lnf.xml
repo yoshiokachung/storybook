@@ -1,0 +1,6 @@
+<application>
+  <component name="DependencyUISettings">
+    <option name="UI_GROUP_BY_SCOPE_TYPE" value="false" />
+    <option name="SCOPE_TYPE" value="file" />
+  </component>
+</application>

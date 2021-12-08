@@ -1,0 +1,23 @@
+/*
+---
+name: TextImportant
+category: SiteWide
+tag: Text
+---
+
+`<strong>`で使われるようなスタイルです。重要性や緊急性・深刻性があることを示します。
+
+```jade
+p.st-Text
+  strong.sw-TextImportant 30%OFFのため、お買い得です！
+p.st-Text
+  strong.sw-TextImportant_b 3,800
+```
+*/
+.sw-TextImportant {
+  font-weight: bold;
+}
+
+.sw-TextImportant_b {
+  font-weight: bold;
+}

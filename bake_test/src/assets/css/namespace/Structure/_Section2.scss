@@ -1,0 +1,30 @@
+/*
+---
+name: Section2
+category: Structure
+tag: Layout
+---
+
+h2相当の見出しをラップするセクションの余白を指定します。
+
+```jade
+p.st-Text .st-Text
+section.st-Section2
+  h2.st-Heading2 .st-Heading2
+  p.st-Text .st-Text
+  p.st-Text .st-Text
+section.st-Section2
+  h2.st-Heading2 .st-Heading2
+  p.st-Text .st-Text
+```
+*/
+.st-Section2 {
+  & + &,
+  :not(#{&}) + & {
+    margin-top: $margin-section2;
+  }
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}

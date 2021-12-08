@@ -1,0 +1,22 @@
+/*
+---
+name: ProductBlock
+category: Structure
+tag: Layout
+---
+
+productsページの商品ブロック
+
+```jade
+.st-Block
+  p.test-Box .st-Block
+.st-Block
+  p.test-Box .st-Block
+```
+
+*/
+.product-tasteWrapper {
+  display: flex;
+  max-width: $max-width;
+  margin: 0 auto;
+}

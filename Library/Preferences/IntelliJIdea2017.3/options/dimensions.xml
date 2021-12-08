@@ -1,0 +1,50 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.2560.1440" x="1279" y="556" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.2560.1440" x="1209" y="304" />
+    <location key="findTextDialog.0.0.2560.1440" x="1576" y="378" />
+    <location key="SettingsEditor.0.0.2560.1440" x="1273" y="343" />
+    <location key="#Browse_Repositories.0.0.2560.1440" x="959" y="346" />
+    <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.2560.1440" x="923" y="442" />
+    <location key="new project wizard.0.0.2560.1440" x="995" y="292" />
+    <location key="#Project_Structure.0.0.2560.1440" x="936" y="246" />
+    <location key="replaceTextDialog.0.0.2560.1440" x="1823" y="374" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$1.0.0.2560.1440" x="1290" y="308" />
+    <location key="NewModule_or_Project.wizard.0.0.2560.1440" x="909" y="255" />
+    <location key="#Plugins.0.0.2560.1440" x="880" y="221" />
+    <location key="#Browse_JetBrains_Plugins_.0.0.2560.1440" x="868" y="218" />
+    <location key="find.popup.0.0.2560.1440" x="1509" y="158" />
+    <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.2560.1440" x="1567" y="487" />
+    <location key="EditFileWatcherDialog.0.0.2560.1440" x="1082" y="435" />
+    <location key="scopes.0.0.2560.1440" x="1199" y="554" />
+    <location key="WebDeployment.AddServerDialog.v.1.0.0.2560.1440" x="1255" y="594" />
+    <location key="#Deployment.0.0.2560.1440" x="1639" y="379" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.2560.1440" x="902" y="355" />
+    <location key="webDeployment.PermissionsDialog.Tabs.0.0.2560.1440" x="1302" y="437" />
+    <location key="ftp.server.browser.0.0.2560.1440" x="1824" y="527" />
+    <location key="ProcessPopupWindow.0.0.2560.1440" x="2160" y="1061" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.0.0.2560.1440" x="1102" y="264" />
+    <location key="publish.login.0.0.2560.1440" x="1351" y="563" />
+    <location key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.2560.1440" x="0" y="23" />
+    <location key="#Options.0.0.2560.1440" x="1002" y="509" />
+    <location key="com.jetbrains.plugins.webDeployment.ui.AdvancedOptionsDialog.0.0.2560.1440" x="1861" y="553" />
+    <location key="GitCloneDialog.0.0.2560.1440" x="1007" y="472" />
+    <location key="CommitChangelistDialog2.0.0.2560.1440" x="1260" y="293" />
+    <size key="find.popup.0.0.2560.1440" width="887" height="630" />
+    <size key="GridCell.Tab.0.left.0.0.2560.1440" width="1221" height="223" />
+    <size key="GridCell.Tab.0.center.0.0.2560.1440" width="1221" height="223" />
+    <size key="GridCell.Tab.0.right.0.0.2560.1440" width="1221" height="223" />
+    <size key="GridCell.Tab.0.bottom.0.0.2560.1440" width="1221" height="223" />
+    <size key="GridCell.Tab.1.left.0.0.2560.1440" width="1576" height="435" />
+    <size key="GridCell.Tab.1.center.0.0.2560.1440" width="1576" height="435" />
+    <size key="GridCell.Tab.1.right.0.0.2560.1440" width="1576" height="435" />
+    <size key="GridCell.Tab.1.bottom.0.0.2560.1440" width="1576" height="435" />
+    <size key="GridCell.Tab.2.left.0.0.2560.1440" width="1576" height="435" />
+    <size key="GridCell.Tab.2.center.0.0.2560.1440" width="1576" height="435" />
+    <size key="GridCell.Tab.2.right.0.0.2560.1440" width="1576" height="435" />
+    <size key="GridCell.Tab.2.bottom.0.0.2560.1440" width="1576" height="435" />
+    <size key="scopes.0.0.2560.1440" width="581" height="387" />
+    <size key="ProcessPopupWindow.0.0.2560.1440" width="400" height="108" />
+    <size key="GitCloneDialog.0.0.2560.1440" width="544" height="232" />
+  </component>
+</application>

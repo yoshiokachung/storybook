@@ -1,0 +1,43 @@
+<application>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="26" />
+      <entry feature="JSDebugConfig.Run.browser-default.preferredBrowser-null.no_mappings" count="2" />
+      <entry feature="OpenInBrowser.Chrome" count="351" />
+      <entry feature="OpenInBrowser.Safari" count="1" />
+      <entry feature="StripeButton[Version Control].shown" count="2" />
+      <entry feature="execute.JavascriptDebugType.Run" count="2" />
+      <entry feature="execute.NodeJSConfigurationType.Debug" count="4" />
+      <entry feature="execute.NodeJSConfigurationType.Run" count="2" />
+      <entry feature="execute.RailsRunConfigurationType.Debug" count="1" />
+      <entry feature="execute.js.build_tools.gulp.Run" count="116" />
+      <entry feature="git.branch.create.new" count="1" />
+      <entry feature="ide.help.Project_Category_and_Options" count="1" />
+      <entry feature="ide.settings.Compiler" count="1" />
+      <entry feature="ide.settings.Deployment" count="8" />
+      <entry feature="ide.settings.File_Watchers" count="6" />
+      <entry feature="ide.settings.GitHub" count="1" />
+      <entry feature="ide.settings.HAML" count="1" />
+      <entry feature="ide.settings.JSON" count="1" />
+      <entry feature="ide.settings.JavaScript" count="1" />
+      <entry feature="ide.settings.Plugins" count="1" />
+      <entry feature="ide.settings.Project_Structure" count="1" />
+      <entry feature="ide.settings.Scopes" count="3" />
+      <entry feature="ideaapp.started" count="63" />
+      <entry feature="json.schema.builtin.completion" count="10" />
+      <entry feature="project.view.pane.PackagesPane" count="1" />
+      <entry feature="project.view.pane.ProjectPane" count="2" />
+      <entry feature="project.view.pane.Scope.Problems" count="1" />
+      <entry feature="project.view.pane.Scope.Project Files" count="1" />
+      <entry feature="terminal.mac" count="79" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.CreateNewProject" count="5" />
+      <entry feature="welcome.screen.WelcomeScreen.Documentation" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.GetFromVcs" count="3" />
+      <entry feature="welcome.screen.WelcomeScreen.ImportProject" count="1" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="21" />
+      <entry feature="welcome.screen.WelcomeScreen.Plugins" count="2" />
+      <entry feature="welcome.screen.null" count="1" />
+    </counts>
+  </component>
+</application>

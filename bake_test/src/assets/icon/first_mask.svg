@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1342" height="656" viewBox="0 0 1342 656">
+  <defs>
+    <polygon id="first_mask-a" points="98 2253 1440 2399 1440 2804 98 2909"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-98 -2253)">
+    <use fill="#D8D8D8" xlink:href="#first_mask-a"/>
+  </g>
+</svg>

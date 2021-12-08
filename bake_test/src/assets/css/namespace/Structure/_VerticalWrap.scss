@@ -1,0 +1,41 @@
+/*
+---
+name: VerticalWrap
+category: Structure
+tag: Layout
+---
+
+verticalの見出しラップ
+
+```jade
+p.st-Text .st-Text
+section.st-Section5
+  h5.st-Heading5 .st-Heading5
+  p.st-Text .st-Text
+  p.st-Text .st-Text
+section.st-Section5
+  h5.st-Heading5 .st-Heading5
+  p.st-Text .st-Text
+```
+*/
+.st-VerticalWrap {
+  position: absolute;
+  @include position(280, 40);
+  padding: 3.6%;
+  background: $color-brand;
+  font-weight: normal;
+  mix-blend-mode: multiply;
+  @include mq-up(md) {
+    @include position(40, 540);
+    padding: 1.8%;
+  }
+}
+
+.st-VerticalWrapRight {
+  position: absolute;
+  @include position(40, 640);
+  padding: 1.8%;
+  background: $color-brand;
+  font-weight: normal;
+  mix-blend-mode: multiply;
+}

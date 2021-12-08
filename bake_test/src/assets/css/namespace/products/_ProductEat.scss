@@ -1,0 +1,20 @@
+/*
+---
+name: ProductEat
+category: Structure
+tag: Layout
+---
+
+productsページの食べ方ブロック
+
+```jade
+.st-Block
+  p.test-Box .st-Block
+.st-Block
+  p.test-Box .st-Block
+```
+
+*/
+.st-ProductHow {
+  background: $color-brand;
+}

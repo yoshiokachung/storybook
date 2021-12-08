@@ -1,0 +1,21 @@
+/*
+---
+name: ProductBlock
+category: Structure
+tag: Layout
+---
+
+productsページの商品ブロック
+
+```jade
+.st-Block
+  p.test-Box .st-Block
+.st-Block
+  p.test-Box .st-Block
+```
+
+*/
+.product-Block {
+  position: relative;
+  @include padding(0, 0, 600, 0);
+}

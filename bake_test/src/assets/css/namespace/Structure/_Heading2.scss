@@ -1,0 +1,18 @@
+/*
+---
+name: Heading2
+category: Structure
+tag: Layout
+---
+
+h2相当の見出し自身の余白を指定します。
+
+```jade
+h2.st-Heading2 .st-Heading2
+p.st-Text .st-Text
+p.st-Text .st-Text
+```
+*/
+.st-Heading2 {
+  margin-bottom: $margin-heading2;
+}

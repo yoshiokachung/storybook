@@ -1,0 +1,44 @@
+// Header
+
+//- var list = ['home', 'product', 'shop', 'question']
+- 
+  var list = [
+    {
+      pageName: 'トップページ',
+      pageDir: ''
+    },
+    {
+      pageName: '商品',
+      pageDir: 'product'
+    },
+    {
+      pageName: '店舗一覧',
+      pageDir: 'shop'
+    },
+    {
+      pageName: 'よくある質問',
+      pageDir: 'question'
+    }
+  ]
+
+mixin list
+  .st-Header
+    .st-Header_LogoArea
+      .st-Header_Logo: include /assets/icon/bake_logo.svg
+    ul.st-Header_NavArea
+      - for (var x = 0; x < list.length; x++)
+  
+        if list[x]['pageDir']===thisPageDir
+          li.st-Header_NavItem.is-current: a(href='/'+list[x]['pageDir']) #{list[x]['pageName']}
+        else
+          li.st-Header_NavItem: a(href='/'+list[x]['pageDir']) #{list[x]['pageName']}
+//ul.gNav
+//  - for (var x = 0; x < list.length; x++)
+//    if list[x]['pageDir']== thisPageDir;
+//      li.is-current: a(href='/') 
+  //each item in list
+  //
+  //  if now === item
+  //    li.is-current: a(href=item) #{name}  
+  //  else
+  //    li: a(href=item) #{name}

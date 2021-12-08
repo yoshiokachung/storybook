@@ -1,0 +1,16 @@
+extend /_template/ja/_default
+append variables
+  //- 変更可能
+  - var pageTitle= "";
+  - var pageDescription= ja.site.description;
+  - var pageKeywords= ja.site.keywords;
+  //- 任意
+  - var pageOgpTitle= pageTitle;
+  - var pageOgpImage= ja.site.ogpImage;
+  - var pageOgpType= "website";
+
+block content
+  //iframe(width="560" height="800" src="https://www.youtube.com/embed/EX9H3Fk2-x0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+  .youtube
+    #video
+      

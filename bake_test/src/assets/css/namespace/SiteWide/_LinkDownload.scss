@@ -1,0 +1,39 @@
+/*
+---
+name: LinkDownload
+category: SiteWide
+tag: [Link, Icon]
+---
+
+ファイルをダウンロードするためのリンクであることを示す場合に使います。
+
+```jade
+p
+  a.sw-Link(href="#") テキストリンクです。
+
+p
+  a.sw-LinkDownload(href="#") ファイルをダウンロードする
+    span.sw-LinkDownload_Icon(aria-hidden="true")
+```
+*/
+.sw-LinkDownload {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}
+
+.sw-LinkDownload_Icon:after {
+  @include Icon(linkDownload);
+  font-size: 1.25em;
+
+  [lang="ja"] &,
+  [lang^="zh"] & {
+    position: relative;
+    top: -0.2em;
+    left: 0.25em;
+  }
+}

@@ -1,0 +1,176 @@
+// ==========================================================================
+// Color
+// ==========================================================================
+
+// カラーパレット
+$color-brand: #FFD700 !default;
+$color-text: #000 !default;
+$color-text-important: #a94442 !default;
+$color-lead: #231916 !default;
+$color-grey: #F6F6F6 !default;
+$color-white: #fff !default;
+$color-link: #000 !default;
+$color-link_white: #fff !default;
+$color-link-hover: #2b70ba !default;
+$background-color: #fff !default;
+
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+// `$breakpoint-up`に対応するルートフォントサイズを指定します。
+// `none`はメディアクエリなしで使用されるので指定必須です。
+$font-size: (
+  'none': 10,
+  'md': 16,
+) !default;
+
+// 注釈などに使用するフォントサイズ
+$font-size-secondary: 0.85em !default;
+
+// ベースになるline-height
+$line-height: 1.8 !default;
+
+//ベースになる文字間
+$letter-spacing: 0.12rem;
+
+// システムフォント
+$font-family-sans-serif: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif !default;
+$font-family-serif: "Hiragino Mincho ProN", "HG明朝E", Meiryo, serif !default;
+$font-family-monospace: Consolas, Menlo, Courier, monospace !default;
+$font-family-en: "Helvetica Neue", Helvetica, sans-serif !default;
+$font-family-zh-cn: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", sans-serif !default;
+$font-family-zh-tw: "Microsoft JhengHei", "微軟正黑體", 'PMingLiU' sans-serif !default;
+
+
+// ==========================================================================
+// Media query
+// ==========================================================================
+
+// `sm`: iPhone6幅（ポートレート・縦）
+// `md`: iPad幅（ポートレート・縦）
+// `lg`: iPad幅（ランドスケープ・横）
+// `xl`: デスクトップ想定
+$breakpoint-up: (
+  'sm': 'print, screen and (min-width: 375px)',
+  'md': 'print, screen and (min-width: 768px)',
+  'lg': 'print, screen and (min-width: 1024px)',
+  'xl': 'print, screen and (min-width: 1440px)',
+) !default;
+
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+// コンテンツの最大幅
+$max-width: 1260px !default;
+$parent-width: 1260;
+$sp-parent-width: 375;
+
+@mixin max_content {
+  @include padding(0, 20, 0, 20);
+  @include mq-up(md) {
+    max-width: $max-width;
+    padding: 0 2.7vw;
+  }
+}
+
+
+@mixin width($w) {
+  width:($w / $parent-width) * 100%;
+}
+
+@mixin margin($t, $r, $b, $l) {
+  margin:($t / $parent-width) * 100% ($r / $parent-width) * 100% ($b / $parent-width) * 100% ($l / $parent-width) * 100%;
+}
+
+@mixin padding($t, $r, $b, $l) {
+  padding:($t / $parent-width) * 100% ($r / $parent-width) * 100% ($b / $parent-width) * 100% ($l / $parent-width) * 100%;
+}
+
+@mixin position($t, $l) {
+  top: ($t / $parent-width) * 100%;
+  left: ($l / $parent-width) * 100%;
+}
+
+@mixin sp-width($w) {
+  width:($w / $sp-parent-width) * 100%;
+}
+
+@mixin sp-margin($t, $r, $b, $l) {
+  margin:($t / $sp-parent-width) * 100% ($r / $sp-parent-width) * 100% ($b / $sp-parent-width) * 100% ($l / $sp-parent-width) * 100%;
+}
+
+@mixin sp-position($t, $l) {
+  top:($t / $sp-parent-width) * 100%;
+  left: ($l / $sp-parent-width) * 100%;
+}
+
+@function get_vw($size, $viewport:768){
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+@function get_pc_vw($size, $viewport:1440){
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@mixin fz_vw($font_size:10){
+  font-size: $font_size * 1px;
+  font-size: get_vw($font_size);
+}
+
+@mixin fz_pc_vw($font_size:16){
+  font-size: $font_size * 1px;
+  font-size: get_pc_vw($font_size);
+}
+
+// グリッドシステムのガター幅
+$grid-column-gap: 1.64vw !default;
+$grid-row-gap: 15px !default;
+$grid-column-gap-md: 30px !default;
+$grid-row-gap-md: 30px !default;
+
+// セクションのマージン
+$margin-section2: 50px !default;
+$margin-section3: 30px !default;
+$margin-section4: 30px !default;
+$margin-section5: 30px !default;
+
+// 見出しのマージン
+$margin-heading2: 25px !default;
+$margin-heading3: 20px !default;
+$margin-heading4: 20px !default;
+$margin-heading5: 20px !default;
+
+// ブロックとテキストのマージン
+$margin-block: 30px !default;
+$margin-lead: 24px !default;
+$margin-text: 16px !default;
+$margin-small-text: 10px !default;
+
+
+// ==========================================================================
+// Animation
+// ==========================================================================
+
+$opacity: 0.7 !default;
+$transition-duration: 0.3s !default;
+$transition-timing-function: ease !default;
+
+// ==========================================================================
+// Form
+// ==========================================================================
+
+$form-border: 1px solid #767676 !default;
+$form-boder-color: #767676 !default;
+$form-border-radius: 3px !default;
+$form-transition-duration: 0.3s !default;
+$form-transition-property: border-color, box-shadow, background-color !default;
+$form-focus-border-color: #1589ee !default;
+$form-focus-box-shadow: 0 0 5px #1589ee !default;
+$form-placeholder-color: #767676 !default;
+$form-disabled-cursor: not-allowed !default;
+$form-disabled-opacity: 0.5 !default;
+$form-disabled-background-color: #ddd !default;

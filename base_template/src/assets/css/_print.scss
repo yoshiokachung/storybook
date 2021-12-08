@@ -1,0 +1,122 @@
+// @see blob/master/src/css/main.css
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/**
+ * 印刷時のスタイル。
+ */
+@media print {
+  .sw-TableScroll td,
+  .sw-TableScroll th {
+    white-space: inherit;
+  }
+}
+
+/**
+ * 印刷時とハイコントラストモード（IEとEdge）が有効なときのスタイル。
+ */
+@media screen and (-ms-high-contrast: active), print {
+  .sw-FormCheckbox {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: auto;
+
+    & + label {
+      padding-left: 0;
+    }
+
+    & + label:before {
+      display: none;
+    }
+  }
+
+  .sw-FormRadio {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: auto;
+
+    & + label {
+      padding-left: 0;
+    }
+
+    & + label:before {
+      display: none;
+    }
+  }
+
+  .sw-FormSelect > select {
+    appearance: menulist;
+  }
+}

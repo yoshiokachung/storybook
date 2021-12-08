@@ -1,0 +1,26 @@
+/*
+---
+name: Heading2
+category: Structure
+tag: Layout
+---
+
+h2相当の見出し自身の余白を指定します。
+
+```jade
+h2.st-Heading2 .st-Heading2
+p.st-Text .st-Text
+p.st-Text .st-Text
+```
+*/
+.st-Vertical {
+  writing-mode: vertical-rl;
+  mix-blend-mode: multiply;
+  z-index: 5;
+  text-align: center;
+  font-size: 4vw;
+  line-height: $line-height;
+  @include mq-up(md) {
+    font-size: 1.4vw;
+  }
+}

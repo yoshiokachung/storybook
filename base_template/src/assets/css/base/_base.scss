@@ -1,0 +1,167 @@
+ /* #base
+   -------------------------------------------------------------------------- */
+/**
+ * 1. `width`と`height`に`margin`と`border`を含めます。
+ */
+html {
+  box-sizing: border-box; /* 1 */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* 1 */
+}
+
+/**
+ * 1. ドキュメントのルートフォントサイズを指定します（`rem`で参照）。
+ * 2. ブレイクポイントごとにルートフォントサイズを変更します。
+ */
+html {
+  font-size: ((map-get($font-size, 'none') / 16) * 100%); /* 1 */
+  line-height: $line-height;
+
+  @include mq-up(sm) {
+    @if map-has-key($font-size, 'sm') {
+      font-size: ((map-get($font-size, sm) / 16) * 100%); /* 2 */
+    }
+  }
+
+  @include mq-up(md) {
+    @if map-has-key($font-size, 'md') {
+      font-size: ((map-get($font-size, md) / 16) * 100%); /* 2 */
+    }
+  }
+
+  @include mq-up(lg) {
+    @if map-has-key($font-size, 'lg') {
+      font-size: ((map-get($font-size, lg) / 16) * 100%); /* 2 */
+    }
+  }
+
+  @include mq-up(xl) {
+    @if map-has-key($font-size, 'xl') {
+      font-size: ((map-get($font-size, xl) / 16) * 100%); /* 2 */
+    }
+  }
+}
+
+/**
+ * 1. できる限り禁則処理が実行されるようにします。
+ * 2. Chrome、Safari、FireFoxのフォントレンダリングを合わせます。
+ * 3. フォントの持っているカーニング情報を使用します。
+ */
+body {
+  color: $color-text;
+  font-family: $font-family-sans-serif;
+  word-wrap: break-word; /* 1 */
+  overflow-wrap: break-word; /* 1 */
+  -webkit-font-smoothing: subpixel-antialiased; /* 2 */
+  -moz-osx-font-smoothing: auto; /* 2 */
+  font-kerning: normal; /* 3 */
+}
+
+/**
+ * マージンをリセットします。
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * ブロック要素の上下のマージンをリセットします。
+ */
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+blockquote, p, address,
+hr,
+table,
+fieldset,
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/**
+ * iOSのSafariとChromeで、`text-decoration: underline;`の罫線が
+ * グリフやディセンダで途切れないようにします。
+ * https://css-tricks.com/almanac/properties/t/text-decoration-skip/
+ */
+a {
+  -webkit-text-decoration-skip: none;
+}
+
+/**
+ * `dt`と`dd`の左端を揃えます。
+ */
+dd {
+  margin-left: 0;
+}
+
+code,
+kbd,
+samp {
+  font-family: $font-family-monospace;
+  font-size: 1em;
+}
+
+/**
+ * 日本語では斜体を使用しないためリセットします。
+ */
+i,
+cite,
+em,
+address,
+dfn {
+  [lang="ja"] & {
+    font-style: normal;
+  }
+}
+
+/**
+ * フルードイメージにします。
+ */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/**
+ * IEのimgとobject要素でもSVGをフルードイメージにします。
+ * See: https://hail2u.net/blog/webdesign/max-width-and-svg-on-ie11-and-below.html
+ */
+[src$=".svg"],
+[data$=".svg"] {
+  width: 100%;
+}
+
+/**
+ * キーボードでアクセスできない要素のフォーカス表示を消します。
+ * Credit: https://github.com/suitcss/base
+ */
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+/**
+ * IE10以降の`input[type="text"]`で入力内容の消去機能を非表示にします。
+ */
+[type="text"]::-ms-clear {
+  visibility: hidden;
+}
+
+/**
+ * IE10以降の`input[type="password"]`でマスクの一時的解除機能を非表示にします。
+ */
+[type="password"]::-ms-reveal {
+  visibility: hidden;
+}
+
+/**
+ * IEとEdgeはスピンボタンに未対応のため、ChromeとFireFoxで非表示にします。
+ */
+[type="number"]::-webkit-outer-spin-button,
+[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}

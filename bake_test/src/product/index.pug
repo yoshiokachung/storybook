@@ -1,0 +1,170 @@
+extend /_template/ja/_default
+append variables
+  //- 変更可能
+  - var pageTitle= "about";
+  - var pageDescription= 'About Page Description';
+  - var pageKeywords= 'About Page Keyword1, About Page Keyword2';
+  //- 任意
+  - var pageOgpTitle= pageTitle;
+  - var pageOgpImage= ja.site.ogpImage;
+  - var pageOgpType= "article";
+
+block content
+  -var thisPageDir = 'product'
+  +list  
+  -
+    var rebakes = [
+      {
+      tasteName: 'FROZEN',
+      tasteDetails: 'ひんやり、ほどける。',
+      tasteHow: '冷蔵庫から出して1-2分待ちます。',
+      tasteComments: 'まるでアイス。空気を多く含んだチーズムースは、口の中でなめらかにほどけていきます。サクサクのタルトとの食感の違いを楽しんで。'
+      },
+      {
+      tasteName: 'REBAKE',
+      tasteDetails: 'あつあつ、トロトロ。',
+      tasteHow: 'a',
+      tasteComments: '本物の焼きたてを再現。中央がふっくら盛り上がってきたら食べごろ。',
+      tasteCommentsSmall: '温め終わった後3分ほどトースターに入れたままにすることで、ムースの中まで温まりやすくなります。'
+      }
+    ]
+    var products = [
+      {
+        productName: 'カリッ、フワッとした食感のチーズタルト。',
+        productImages: '/assets/img/namespace/products/plain_sizzle.jpg',
+        productSolo: '/assets/img/namespace/products/cheese_solo.png',
+        productDetails: 'サクッとした食感を出すために2度焼きしたタルト生地と、フワッとしたチーズムースのコントラストが楽しいチーズタルト。冷たいままで、トースターで温めて、さまざまな食べ方をお楽しみください。',
+        productFeature_a: 'フワフワ食感のムース',
+        productFeature_a_details: 'オリジナルブレンドのクリームチーズを使ったムースは、一口ほおばるとクリーミーな味わいと爽やかな酸味、ほのかな塩味が口いっぱいに広がります。',
+        productFeature_b: '二度焼きのタルト生地',
+        productFeature_b_details: 'オリジナルブレンドの小麦粉で作るタルト生地は、生地だけで1回、ムースを入れてもう1回焼き上げます。こだわりの2度焼きで仕上げたタルトは、密かなファンも多い隠れた主役。'
+      },
+      {
+        productName: 'ふんわりとろけるチョコチーズタルト。',
+        productImages: '/assets/img/namespace/products/choco_sizzle.jpg',
+        productSolo: '/assets/img/namespace/products/choco_solo.png',
+        productDetails: '京都のチョコレート専門店「Dari K」とのコラボレーションにより実現したチョコチーズタルト。フルーティなカカオの香りを活かした期間限定のチーズタルトです。',
+        productFeature_a: '香り高いチョコレート',
+        productFeature_a_details: 'インドネシアで育てられた、採れたてのカカオ豆を厳選して利用。1つ1つの工程を丁寧に作られたチョコレートは、他では味わえない本当のカカオの味を引き出します。',
+        productFeature_b: '香り引き立つムース',
+        productFeature_b_details: 'チョコのフルーティーさを活かしながらもチーズの風味は残したい。丁寧に混ぜ合わせたチーズムースとチョコレートは誰でも食べやすい絶妙なバランスに。'
+      }
+    ]
+  main.product-layout_container
+    .product-hero
+      .product-hero_wrapper
+        .product-hero_symbol: include /assets/icon/tart_logo.svg
+        .product-hero_textContainer
+          .sw-TextImportant ベイクチーズタルト10個入り(チョコ)
+          .hero-Standard_wrapper_strap チーズタルト5個/チョコチーズタルト5個
+            | オンライン限定商品
+          .hero-Standard_wrapper_price
+            span.sw-Label 送料込み    
+            em.sw-TextImportant_b 3,800
+            span 円(税別)
+    section.story-container
+      h1.sw-Lead おいしいチーズタルト、
+        br
+        | できました。
+      svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1280 840")
+        defs
+          clippath#story_mask_tart
+            polygon(points="869,717 466,717 466,283 869,226")
+        image(clip-path="url(#story_mask_tart)" xlink:href="/assets/img/namespace/products/tart_story.jpg" x="0" y="0" width="100%" height="100%")
+        defs
+          clippath#story_mask_package
+            polygon(points="1295,907 894,907 894,423 1295,423")
+        image(clip-path="url(#story_mask_package)" xlink:href="/assets/img/namespace/products/plain_choco_solo.jpg" x="0" y="0" width="100%" height="800")  
+      p 私たちは考えました。「店頭での焼きたてチーズタルトを家庭でも再現できないのか？」と。店頭だからおいしいのは当たり前。より多くの方に食べていただきたいという思いから、試行錯誤を繰り返し、焼きたてに負けないサクサクのタルト生地と、フワッとしたチーズムースのチーズタルトを完成させました。
+    section
+      ul.product_list
+        each product, index in products
+          li
+            .product-Block
+              if index === 0
+                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1920 1173" class="mask_svgPc")
+                  defs
+                    clippath#products_block_mask
+                      polygon(points="0,0 1920,160 1920,853 0,950 ")
+                  image(clip-path="url(#products_block_mask)" xlink:href= `${product.productImages}`, x="0" y="0" width="1920" height="950")
+                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 750 750" class="mask_svgSp")
+                  defs
+                    clippath#products_block_maskSp
+                      polygon(points="0,0 1920,160 1920,853 0,950 ")
+                  image(clip-path="url(#products_block_maskSp)" xlink:href= `${product.productImages}`, x="0" y="0" width="750" height="750")
+              else
+                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1920 1173" class="mask_svgPc")
+                  defs
+                    clippath#products_block_mask_b
+                      polygon(points="0,160 1920,0 1920,950 0,853 ")
+                  image(clip-path="url(#products_block_mask_b)" xlink:href= `${product.productImages}`, x="0" y="0" width="1920" height="950")
+                svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 750 750" class="mask_svgSp")
+                  defs
+                    clippath#products_block_mask_bSp
+                      polygon(points="0,160 1920,0 1920,950 0,853 ")
+                  image(clip-path="url(#products_block_mask_bSp)" xlink:href= `${product.productImages}`, x="0" y="0" width="750" height="750")  
+              object.sw-TextEgVertical.mask_svgPc
+                include /assets/icon/plain.svg
+              .product-assort_wrapper.st-ContentBody
+                img.product-soloImage(src= `${product.productSolo}`, alt="")
+                .ProductContentDetails
+                  h2 #{product['productName']}
+                  p #{product['productDetails']}
+            .sw-FeatureImage
+              h3.st-VerticalWrap
+                .st-Vertical #{product['productFeature_a']}
+              svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1350 640" class="mask_svgPc")
+                defs
+                  clippath#cheese_mask
+                    polygon(points="650,220 1200,165 1200,625 650,625")
+                image(clip-path="url(#cheese_mask)" xlink:href="/assets/img/namespace/products/essence_cream.jpg" x="600" y="0" width="640" height="800")  
+              svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 750 750" class="mask_svgSp")
+                defs
+                  clippath#cheese_maskSp
+                    polygon(points="120,368 720,260 720,900 120,900")
+                image(clip-path="url(#cheese_maskSp)" xlink:href="/assets/img/namespace/products/essence_cream.jpg" x="100" y="100" width="750" height="750")    
+              .product-feature_desc #{product['productFeature_a_details']}
+            .sw-FeatureImage
+              h3.st-VerticalWrapRight
+                .st-Vertical #{product['productFeature_b']}
+              svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 1350 640" class="mask_svgPc")
+                defs
+                  clippath#cup_mask
+                    polygon(points="152,140 700,140 700,535 152,600")
+                image(clip-path="url(#cup_mask)" xlink:href="/assets/img/namespace/products/essence_cup.jpg" x="100" y="40" width="640" height="640")  
+              svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 600 600" class="mask_svgSp")
+                defs
+                  clippath#cup_maskSp
+                    polygon(points="60,184 365,130 365,450 60,448")
+                image(clip-path="url(#cup_maskSp)" xlink:href="/assets/img/namespace/products/essence_cream.jpg" x="600" y="0" width="640" height="800")    
+              .product-feature_desc_right #{product['productFeature_b_details']}
+    
+    section.st-ProductHow
+      h2 HOW TO EAT
+      p オンライン限定のチーズタルトは食べ方もさまざま。
+      | 焼きたての商品とはまた違った食感をお楽しみください。
+      ul.product-tasteWrapper
+        each rebake, index in rebakes
+          li
+            h3 #{rebake['tasteName']}
+            svg(version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 640 1040")
+              if index === 0
+                defs
+                  clippath#taste_a_mask
+                    polygon(points="78,115 600,115 600,630 110,630")
+                image(clip-path="url(#taste_a_mask)" xlink:href="/assets/img/namespace/products/taste_1.jpg" x="30" y="30" width="640" height="640")
+              else
+                defs
+                  clippath#taste_b_mask
+                    polygon(points="0,460 578,460 597,975 0,975")
+                image(clip-path="url(#taste_b_mask)" xlink:href="/assets/img/namespace/products/taste_2.jpg" x="30" y="400" width="640" height="640")
+              p #{rebake['tasteDetails']}
+              | #{rebake['tasteHow']}
+            p #{rebake['tasteComments']}
+            p.small #{rebake['tasteCommentsSmall']}
+    section.product-package
+      h2 PACKAGE
+      p チーズタルトとDariKのチョコを使った期間限定のチョコチーズタルトのセットです。こだわりのパッケージで贈り物やプレゼントにも。
+        
+    img(src="/assets/img/namespace/products/mothers_day.png", style="display:block; margin:80px auto; ")
+    img(src="/assets/img/namespace/products/details.png", style="display:block; margin:0 auto; ")

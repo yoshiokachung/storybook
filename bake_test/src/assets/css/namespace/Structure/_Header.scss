@@ -1,0 +1,48 @@
+/*
+---
+name: Header
+category: Structure
+tag: Global
+---
+*/
+
+.st-Header {
+  background: $color-white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 24px 44px 28px;
+}
+.st-Header_LogoArea {
+
+}
+.st-Header_Logo {
+  width: 96px;
+}
+.st-Header_NavArea {
+  display: none;
+  @include mq-up(md) {
+    display: flex;
+    padding-bottom: 8px;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
+}
+.st-Header_Nav {}
+.st-Header_NavItem {
+  width: 125px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  color: $color-grey;
+  &.is-current {
+    color: $color-link;
+  }
+  @include mq-up(md) {
+    font-size: 0.8rem;
+  }
+}
+.st-Header_NavLink {}
+.st-Header_Current {}

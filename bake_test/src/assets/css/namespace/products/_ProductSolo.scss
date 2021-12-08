@@ -1,0 +1,23 @@
+/*
+---
+name: Block
+category: Structure
+tag: Layout
+---
+
+productsページ 単品のタルト
+
+```jade
+.st-Block
+  p.test-Box .st-Block
+.st-Block
+  p.test-Box .st-Block
+```
+
+*/
+.product-soloImage {
+  @include sp-width(280);
+  @include mq-up(md) {
+    @include width(475)
+  }
+}

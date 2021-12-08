@@ -1,0 +1,24 @@
+/*
+---
+name: TextEgVertical
+category: SiteWide
+tag: Text
+---
+
+タルトの見出し・あしらい部分
+
+```jade
+p.st-Text
+  em.sw-TextEgVertical 30%OFFのため、
+  | お買い得です！
+  small （30%OFFであることを特に伝えたい）
+p.st-Text 30%OFFのため、
+  em.sw-TextEgVertical お買い得です！
+  small （お買い得であることを特に伝えたい）
+```
+*/
+.sw-TextEgVertical {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+}

@@ -1,0 +1,49 @@
+/*
+---
+name: ProductAssort
+category: Products
+tag: Layout
+---
+
+product コンテンツのflexbox
+
+```jade
+footer.st-ContentFoot
+  h2.st-Heading2 .st-Heading2
+  p.st-Text .st-Text
+  p.st-Text .st-Text
+```
+*/
+.product-feature_desc {
+  position: absolute;
+  @include sp-width(340);
+  @include position(0, 40);
+  top: auto;
+
+  @include mq-up(md) {
+    @include width(512);
+    @include position(200, 40);
+  }
+  &_right {
+    @extend .product-feature_desc;
+    @include position(0, 0);
+    @include mq-up(md) {
+      @include position(0, 260);
+    }
+  }
+}
+.product-assort_wrapper {
+  position: absolute;
+  @include sp-position(60, 18);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  @include mq-up(md) {
+    padding-top: 400px;
+    bottom: 0;
+    top: auto;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+}
