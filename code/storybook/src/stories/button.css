@@ -6,6 +6,7 @@
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  width:100%;
 }
 .storybook-button--primary {
   color: white;
