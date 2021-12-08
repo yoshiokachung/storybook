@@ -26,7 +26,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
         </svg>
         <h1>Acme</h1>
       </div>
-      <div>
+      <div className="buttonWrapper">
         {user ? (
           <Button size="small" onClick={onLogout} label="Log out" />
         ) : (
